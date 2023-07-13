@@ -1,7 +1,15 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import pesa from '../assets/img/pesa.png'
 
 export default function NavbarSmall() {
+    const navigate = useNavigate()
+    function enlaceMiCuenta() {
+        navigate("/MiCuenta", { replace: false });
+    }
+    function enlaceInicio() {
+        navigate("/", { replace: false });
+    }
     return (
         <div>
             <nav className="navbar bg-body-tertiary">
@@ -24,10 +32,10 @@ export default function NavbarSmall() {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Mi cuenta</a>
+                                <a className="nav-link" onClick={()=>enlaceMiCuenta()}>Mi cuenta</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Salir</a>
+                                <a className="nav-link" onClick={()=>enlaceInicio()}>Salir</a>
                             </li>
                         </ul>
                     </div>

@@ -25,7 +25,6 @@ export default function Form() {
         </select>
 
         <input className="btn btn-primary mb-5" type="submit" value="Submit"></input>
-
     </div>
   )
 }
