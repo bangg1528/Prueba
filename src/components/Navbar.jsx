@@ -34,9 +34,6 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <a className="nav-link" onClick={()=>enlaceContacto()}>Contactanos</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Cotiza tu plan</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
