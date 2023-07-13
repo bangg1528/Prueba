@@ -1,5 +1,6 @@
 import React from 'react'
-import pesa1 from '../assets/img/pesa.png'
+import Carru1 from '../assets/img/Carrusel1.png'
+import Carru2 from '../assets/img/Carrusel2.png'
 
 export default function CarruselAuto() {
     return (
@@ -8,10 +9,10 @@ export default function CarruselAuto() {
             <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="#" className="d-block w-100 h-50" alt="..."/>
+                        <img src={Carru1} className="d-block w-100 h-50" alt="..."/>
                     </div>
                     <div className="carousel-item">
-                        <img src="#" className="d-block w-100 h-50" alt="..."/>
+                        <img src={Carru2} className="d-block w-100 h-50" alt="..."/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

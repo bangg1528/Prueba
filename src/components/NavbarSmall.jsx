@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import pesa from '../assets/img/pesa.png'
+import pesa from '../assets/img/LogoGYM.png'
 
 export default function NavbarSmall() {
     const navigate = useNavigate()
@@ -15,7 +15,7 @@ export default function NavbarSmall() {
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
-                        <img src={pesa} alt="Logo" width="40" height="50" className="d-inline-block align-text-top mx-2"/>
+                        <img src={pesa} alt="Logo" width="120" height="70" className="d-inline-block align-text-top mx-2"/>
                             GYM BP (BadPancho)
                     </a>
                     <div>
