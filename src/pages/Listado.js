@@ -19,6 +19,7 @@ export default function Listado() {
 
   return (
     <div>
+      <h2 className='mb-5 mt-5 text-center'>Registro de Contacto</h2>
       <table className="table container ">
         <thead>
           <tr>

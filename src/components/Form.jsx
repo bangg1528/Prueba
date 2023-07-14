@@ -16,19 +16,19 @@ export default function Form() {
     <form className=' container text-center' onSubmit={handleSubmit}>
 
         <label htmlFor="" className='mt-5 '>Nombre</label>
-        <input className="form-control mb-4" type="text" name='nombre' onChange={handleChange} />
+        <input className="form-control mb-4 " type="text" name='nombre' required onChange={handleChange} />
 
         <label htmlFor="">Apellido</label>
-        <input className="form-control mb-4" type="text" name='apellido' onChange={handleChange}/>
+        <input className="form-control mb-4" type="text" name='apellido' required onChange={handleChange}/>
 
         <label htmlFor="">Rut</label>
-        <input className="form-control mb-4" type="text" name='rut' onChange={handleChange}/>
+        <input className="form-control mb-4" type="text" name='rut' required onChange={handleChange}/>
 
         <label htmlFor="">Correo</label>
-        <input className="form-control mb-4" type="mail" name='correo' onChange={handleChange}/>
+        <input className="form-control mb-4" type="email" name='correo' required onChange={handleChange}/>
 
         <label htmlFor="">Selecciona tu sede</label>
-        <select name="sedes" id="" className='form-control mb-4' onChange={handleChange}>
+        <select name="sedes" id="" className='form-control mb-4' required onChange={handleChange}>
             <option value="">Elija sede</option>
             <option value="Estacion Central">Estacion Central</option>
             <option value="La florida">La florida</option>
